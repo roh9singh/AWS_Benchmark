@@ -1,0 +1,5 @@
+#!/bin/bash
+
+gcc disk.c -pthread -o d
+./d
+

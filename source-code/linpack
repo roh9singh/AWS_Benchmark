@@ -1,0 +1,17 @@
+#!/bin/bash
+
+wget -q --no-check-certificate https://raw.githubusercontent.com/panticz/installit/master/install.linpack.sh -O - | bash -
+
+# get CPU info
+CPU=$(cat /proc/cpuinfo | grep "model name" | tail -1)
+COUNT=$(cat /proc/cpuinfo | grep processor | wc -l)
+echo "CPU : $CPU"
+echo "COUNT : $COUNT"
+
+# OPTIONAL: configure parameter
+export MKL_DYNAMIC=false
+export OMP_NUM_THREADS=4
+
+# run
+runme_xeon64
+
