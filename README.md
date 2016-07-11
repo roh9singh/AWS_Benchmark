@@ -1,3 +1,5 @@
 # AWS_Benchmark
 
-Refer the Manual.pdf and Refort.pdfs
+For the step by step execution refer the Manual.pdf document 
+
+For the results and analysis refer the Refort.pdf document
